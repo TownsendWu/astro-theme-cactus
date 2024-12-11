@@ -3,13 +3,13 @@ import type { AstroExpressiveCodeOptions } from "astro-expressive-code";
 
 export const siteConfig: SiteConfig = {
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
-	author: "Chris Williams",
+	author: "Townsend",
 	// Date.prototype.toLocaleDateString() parameters, found in src/utils/date.ts.
 	date: {
-		locale: "zh-CN",
+		locale: "zh",
 		options: {
-			day: "numeric",
-			month: "short",
+			day: "2-digit",
+			month: "2-digit",
 			year: "numeric",
 		},
 	},
@@ -30,16 +30,20 @@ export const menuLinks: { path: string; title: string }[] = [
 		title: "Home",
 	},
 	{
-		path: "/about/",
-		title: "About",
-	},
-	{
 		path: "/posts/",
 		title: "Blog",
 	},
 	{
 		path: "/notes/",
 		title: "Notes",
+	},
+	// {
+	// 	path: "/tags/",
+	// 	title: "Tags",
+	// },
+	{
+		path: "/about/",
+		title: "About",
 	},
 ];
 

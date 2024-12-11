@@ -12,7 +12,7 @@ export function getFormattedDate(
 	return new Intl.DateTimeFormat(siteConfig.date.locale, {
 		...(siteConfig.date.options as Intl.DateTimeFormatOptions),
 		...options,
-	}).format(date);
+	}).format(date.getTime() + date.getTimezoneOffset() * 60000);
 }
 
 export function collectionDateSort(
