@@ -1,7 +1,7 @@
 ---
 title: 随笔-阳明心学
 description: 随笔-阳明心学
-publishDate: "2024-12-15T0:46:412Z"
+publishDate: "2024-12-15T00:46:41Z"
 tags: ["随笔", "阳明心学", "唯心论"]
 ---
 

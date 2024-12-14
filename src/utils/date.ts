@@ -8,7 +8,7 @@ export function getFormattedDate(
 	if (date === undefined) {
 		return "Invalid Date";
 	}
-
+	console.log(date);
 	return new Intl.DateTimeFormat(siteConfig.date.locale, {
 		...(siteConfig.date.options as Intl.DateTimeFormatOptions),
 		...options,
